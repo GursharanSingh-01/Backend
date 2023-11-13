@@ -20,6 +20,13 @@ public class StudentController {
         return"New student is added";
     }
 
+//    @GetMapping("/user/:id")
+//    public String getuserById(@RequestBody Student student){
+//        studentService.saveStudent(student);
+//        return"New student is added";
+//    }
+
+
     @GetMapping("/getAll")
     public List<Student> getAllStudents(){
         return studentService.getAllStudents();
